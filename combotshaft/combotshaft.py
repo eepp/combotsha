@@ -200,7 +200,7 @@ def _main():
         cfg_irc = cfg['irc']
         irc_bot = _IrcBot(
             cfg_irc['channel'],
-            cfg_irc.get('nick', 'combotsha'),
+            cfg_irc.get('nick', 'combotshaft'),
             cfg_irc['server'],
             cfg_irc.get('port', 6667),
         )

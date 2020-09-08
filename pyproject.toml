@@ -26,11 +26,15 @@ requires = ['poetry>=0.12']
 build-backend = 'poetry.masonry.api'
 
 [tool.poetry]
-name = 'combotsha'
+name = 'combotshaft'
 version = '0.1.0'
 description = 'An IRC bot to notify of new commits'
-authors = ['Jérémie Galarneau <jeremie.galarneau@gmail.com>']
-repository = 'https://github.com/jgalar/combotsha/'
+authors = [
+    'Jérémie Galarneau <jeremie.galarneau@gmail.com>',
+    'Philippe Proulx <eeppeliteloop@gmail.com>'
+]
+maintainers = ['Philippe Proulx <eeppeliteloop@gmail.com>']
+repository = 'https://github.com/eepp/combotshaft/'
 license = 'MIT'
 
 [tool.poetry.dependencies]
@@ -44,7 +48,7 @@ pylint = '*'
 mypy = '*'
 
 [tool.poetry.scripts]
-combotsha = 'combotsha.combotsha:_main'
+combotshaft = 'combotshaft.combotshaft:_main'
 
 [tool.black]
 skip-string-normalization = true
