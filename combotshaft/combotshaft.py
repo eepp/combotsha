@@ -56,7 +56,8 @@ def _format_commit(
     dt = f'{before_dt}{dt_str}{after_dt}'
     hash = f'{before_hash}{commit.hexsha[:8]}{after_hash}'
     summary = f'{before_summary}{commit.summary}{after_summary}'
-    author = f'{before_author}{commit.author.name}{after_author}'
+    author_abbrev = ''.join([part[0].upper() for part in commit.author.name.split(' ')])
+    author = f'{before_author}{author_abbrev}{after_author}'
     insertions = (
         f'{before_insertions}+{commit.stats.total["insertions"]}{after_insertions}'
     )
