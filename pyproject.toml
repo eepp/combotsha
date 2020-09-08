@@ -27,7 +27,7 @@ build-backend = 'poetry.masonry.api'
 
 [tool.poetry]
 name = 'combotshaft'
-version = '0.1.0'
+version = '0.2.0'
 description = 'An IRC bot to notify of new commits'
 authors = [
     'Jérémie Galarneau <jeremie.galarneau@gmail.com>',
